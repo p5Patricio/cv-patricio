@@ -16,13 +16,13 @@ jobs:
       - name: Compile Spanish CV
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: es/cv_es.tex
+          root_file: cv_es.tex
           working_directory: es/
 
       - name: Compile English CV
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: en/cv_en.tex
+          root_file: cv_en.tex
           working_directory: en/
 
       - name: Upload PDF Artifacts
