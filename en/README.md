@@ -7,7 +7,7 @@ Guanajuato, Mexico | +52 473 737 4224 | [pa.garciaperezvela@ugto.mx](mailto:pa.g
 [LinkedIn](https://linkedin.com/in/patricioagpv) | [GitHub](https://github.com/p5Patricio) | [Portfolio](https://portafolio.patodev.com)
 
 ## Profile
-Computer Systems Engineer focused on full-stack products, automation, applied AI, and data systems. At Mazda, I built an IT document-management system that replaces Excel/email-based controls with role-based workflows, validations, traceability, and SQL Server revision history. Main stack: Python/FastAPI, TypeScript/Next.js, C#/.NET, PostgreSQL/pgvector, Docker, and NLP/voice models.
+Recent Computer Systems Engineering graduate focused on full-stack products, automation, applied AI, and data systems. At Mazda, I built an IT document-management system that replaces Excel/email-based controls with role-based workflows, validations, traceability, and SQL Server revision history. Main stack: Python/FastAPI, TypeScript/Next.js, C#/.NET, PostgreSQL/pgvector, Docker, and NLP/voice models.
 
 ## Technical Skills
 - **Full-stack:** TypeScript, JavaScript, React, Next.js, Node.js, Express, FastAPI, REST APIs, HTML/CSS.
@@ -49,11 +49,11 @@ Computer Systems Engineer focused on full-stack products, automation, applied AI
 - Implemented an ML backend that clusters NBA players with K-Means, compares player/team profiles, and generates PDF radar reports for coaching insights.
 - **Stack:** Python, FastAPI, scikit-learn, Pandas, NBA API, PDF reports, Next.js.
 
-### [Symmetrical Code — Bilingual Software Studio Landing](https://github.com/p5Patricio/Symmetrical-Code)
-**2026 | [Live demo](https://symmetrical-code.vercel.app) | Public GitHub repository**
+### Fitodex — Agrochemical Control for DICIVA
+**2024 – 2025 | Universidad de Guanajuato project | Private repository**
 
-- Developed a bilingual web experience with a project gallery, ES/EN localization, automated tests, and Vercel deployment.
-- **Stack:** React, TypeScript, Vite, i18next, Tailwind CSS, Vitest, Vercel.
+- Developed a REST API to digitize agrochemical catalog and control workflows: insecticides, crops, pests, dosage, technical sheets, safety documents, users, roles, and password recovery.
+- **Stack:** Node.js, Express, MongoDB Atlas, Mongoose, JWT, bcrypt, Nodemailer, Docker, Fly.io.
 
 ## Education
 **Universidad de Guanajuato (DICIS)** — Computer Systems Engineering

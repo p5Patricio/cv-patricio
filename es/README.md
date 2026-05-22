@@ -7,7 +7,7 @@ Guanajuato, México | +52 473 737 4224 | [pa.garciaperezvela@ugto.mx](mailto:pa.
 [LinkedIn](https://linkedin.com/in/patricioagpv) | [GitHub](https://github.com/p5Patricio) | [Portafolio](https://portafolio.patodev.com)
 
 ## Perfil
-Ingeniero en Sistemas Computacionales enfocado en productos full-stack, automatización, IA aplicada y sistemas de datos. En Mazda construí un sistema de gestión documental para TI que reemplaza controles basados en Excel/correo por flujos con roles, validaciones, trazabilidad e historial en SQL Server. Trabajo principalmente con Python/FastAPI, TypeScript/Next.js, C#/.NET, PostgreSQL/pgvector, Docker y modelos de NLP/voz.
+Ingeniero en Sistemas Computacionales recién titulado, enfocado en productos full-stack, automatización, IA aplicada y sistemas de datos. En Mazda construí un sistema de gestión documental para TI que reemplaza controles basados en Excel/correo por flujos con roles, validaciones, trazabilidad e historial en SQL Server. Trabajo principalmente con Python/FastAPI, TypeScript/Next.js, C#/.NET, PostgreSQL/pgvector, Docker y modelos de NLP/voz.
 
 ## Habilidades Técnicas
 - **Full-stack:** TypeScript, JavaScript, React, Next.js, Node.js, Express, FastAPI, REST APIs, HTML/CSS.
@@ -49,11 +49,11 @@ Ingeniero en Sistemas Computacionales enfocado en productos full-stack, automati
 - Implementé un backend que agrupa jugadores NBA con K-Means, compara perfiles por cluster/equipo y genera reportes PDF con gráficos radar para apoyo de entrenamiento.
 - **Stack:** Python, FastAPI, scikit-learn, Pandas, NBA API, PDF reports, Next.js.
 
-### [Symmetrical Code — Landing bilingüe de software studio](https://github.com/p5Patricio/Symmetrical-Code)
-**2026 | [Demo](https://symmetrical-code.vercel.app) | GitHub público**
+### Fitodex — Control de agroquímicos para DICIVA
+**2024 – 2025 | Proyecto Universidad de Guanajuato | Repositorio privado**
 
-- Desarrollé una experiencia web bilingüe con galería de proyectos, contenido localizado ES/EN, pruebas automatizadas y despliegue en Vercel.
-- **Stack:** React, TypeScript, Vite, i18next, Tailwind CSS, Vitest, Vercel.
+- Desarrollé una API REST para digitalizar el catálogo y control de agroquímicos: insecticidas, cultivos, plagas, dosis, fichas técnicas, hojas de seguridad, usuarios, roles y recuperación de contraseña.
+- **Stack:** Node.js, Express, MongoDB Atlas, Mongoose, JWT, bcrypt, Nodemailer, Docker, Fly.io.
 
 ## Educación
 **Universidad de Guanajuato (DICIS)** — Ingeniería en Sistemas Computacionales
