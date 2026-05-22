@@ -24,4 +24,4 @@ GitHub Actions compiles both LaTeX files and uploads the generated PDFs as artif
 
 - [LinkedIn](https://linkedin.com/in/patricioagpv)
 - [GitHub](https://github.com/p5Patricio)
-- [Portfolio](https://portafolio.patodev.com)
+- [Portfolio](https://patodev.com/)

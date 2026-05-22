@@ -4,7 +4,7 @@
 
 Guanajuato, México | +52 473 737 4224 | [pa.garciaperezvela@ugto.mx](mailto:pa.garciaperezvela@ugto.mx)
 
-[LinkedIn](https://linkedin.com/in/patricioagpv) | [GitHub](https://github.com/p5Patricio) | [Portafolio](https://portafolio.patodev.com)
+[LinkedIn](https://linkedin.com/in/patricioagpv) | [GitHub](https://github.com/p5Patricio) | [Portafolio](https://patodev.com/)
 
 ## Perfil
 Ingeniero en Sistemas Computacionales recién titulado, enfocado en productos full-stack, automatización, IA aplicada y sistemas de datos. En Mazda construí un sistema de gestión documental para TI que reemplaza controles basados en Excel/correo por flujos con roles, validaciones, trazabilidad e historial en SQL Server. Trabajo principalmente con Python/FastAPI, TypeScript/Next.js, C#/.NET, PostgreSQL/pgvector, Docker y modelos de NLP/voz.

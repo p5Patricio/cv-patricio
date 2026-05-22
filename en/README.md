@@ -4,7 +4,7 @@
 
 Guanajuato, Mexico | +52 473 737 4224 | [pa.garciaperezvela@ugto.mx](mailto:pa.garciaperezvela@ugto.mx)
 
-[LinkedIn](https://linkedin.com/in/patricioagpv) | [GitHub](https://github.com/p5Patricio) | [Portfolio](https://portafolio.patodev.com)
+[LinkedIn](https://linkedin.com/in/patricioagpv) | [GitHub](https://github.com/p5Patricio) | [Portfolio](https://patodev.com/)
 
 ## Profile
 Recent Computer Systems Engineering graduate focused on full-stack products, automation, applied AI, and data systems. At Mazda, I built an IT document-management system that replaces Excel/email-based controls with role-based workflows, validations, traceability, and SQL Server revision history. Main stack: Python/FastAPI, TypeScript/Next.js, C#/.NET, PostgreSQL/pgvector, Docker, and NLP/voice models.
