@@ -1,60 +1,64 @@
-# Patricio García — AI Software Engineer
+# Patricio Antonio García Pérez Vela — CV
 
-**AI Solutions Architect | Full-Stack Developer | AI-Assisted Dev**
+**Software Engineer | Full-Stack, AI & Data Systems**
 
-- **Ubicación:** Guanajuato, México
-- **Email:** [pa.garciaperezvela@ugto.mx](mailto:pa.garciaperezvela@ugto.mx)
-- **Teléfono:** +52 473 737 4224
-- **LinkedIn:** [patricioagpv](https://linkedin.com/in/patricioagpv)
-- **GitHub:** [p5patricio](https://github.com/p5patricio)
-- **Portafolio:** [portafolio.patodev.com](https://portafolio.patodev.com)
+Guanajuato, México | +52 473 737 4224 | [pa.garciaperezvela@ugto.mx](mailto:pa.garciaperezvela@ugto.mx)
 
----
+[LinkedIn](https://linkedin.com/in/patricioagpv) | [GitHub](https://github.com/p5Patricio) | [Portafolio](https://portafolio.patodev.com)
 
-## Resumen Profesional
-AI Solutions Architect & Full Stack Engineer especializado en el despliegue de **Agentes Autónomos** y LLMs locales. Con una sólida base en Ingeniería de Sistemas (Promedio 9.4/10), me destaco por optimizar flujos de desarrollo mediante metodologías SDD y visión por computadora. En Mazda, implementé soluciones que **redujeron tiempos operativos en un 85%**. Experto en Python, TypeScript y arquitecturas de datos modernas.
-
----
+## Perfil
+Ingeniero en Sistemas Computacionales enfocado en productos full-stack, automatización, IA aplicada y sistemas de datos. En Mazda construí un sistema de gestión documental para TI que reemplaza controles basados en Excel/correo por flujos con roles, validaciones, trazabilidad e historial en SQL Server. Trabajo principalmente con Python/FastAPI, TypeScript/Next.js, C#/.NET, PostgreSQL/pgvector, Docker y modelos de NLP/voz.
 
 ## Habilidades Técnicas
-- **AI & LLMs:** LLM Integration, GPT-4o, Groq API, Gemini API, Whisper, OpenAI API, Multimodal AI, Computer Vision, NLP, Embeddings, RAG, pgvector, Semantic Search.
-- **Lenguajes:** Python, TypeScript, JavaScript, C#, SQL, HTML/CSS.
-- **Frameworks:** FastAPI, Express.js, Node.js, React, Next.js, React Native, Expo, .NET, TensorFlow, spaCy, NumPy, OpenCV, MediaPipe.
-- **Bases de Datos:** PostgreSQL, SQL Server, MongoDB, Firebase, Supabase, pgvector.
-- **Cloud & DevOps:** Docker, Vercel, Render, Fly.io, GitHub Actions, CI/CD, Linux, WSL2.
-- **Herramientas:** Git, REST API, Jest, PyInstaller, Web Scraping, RSS, SDLC, Agile, Scrum.
-
----
+- **Full-stack:** TypeScript, JavaScript, React, Next.js, Node.js, Express, FastAPI, REST APIs, HTML/CSS.
+- **IA, datos y ML:** Python, Pandas, scikit-learn, spaCy, TensorFlow, Whisper/faster-whisper, Gemini/OpenAI APIs, embeddings, pgvector, NLP, visión por computadora.
+- **Bases de datos:** PostgreSQL, SQL Server, MongoDB, Supabase, Entity Framework, Alembic.
+- **Cloud, DevOps y herramientas:** Docker, GitHub Actions, Vercel, Render, Fly.io, Git, Linux, WSL2, Scrum/SDLC.
+- **Enterprise:** C#/.NET, Windows Forms, Active Directory, SharePoint.
+- **Idiomas:** Español nativo, inglés B2.
 
 ## Experiencia Profesional
+### Mazda Motor Manufacturing de México — Software Engineer Intern
+**Salamanca, Gto., México | Ago 2025 — Feb 2026**
 
-### Mazda Motor Manufacturing de México
-**Ingeniero de Software (Intern)** | *Ago 2025 – Feb 2026*
+*IT Document Management Digitalization FY25*
 
-- Diseñé e implementé un DMS end-to-end en C#/.NET con SQL Server, **reduciendo los tiempos de búsqueda y actualización en un 85%** y eliminando por completo la redundancia de datos manual.
-- Lideré la integración con Active Directory y SharePoint, automatizando flujos de aprobación que **eliminaron el 100% de los errores manuales** de trazabilidad documental.
-- Entregué el proyecto bajo metodología Agile/Scrum, cumpliendo con los estándares SDLC corporativos.
+- Transformé un proceso documental basado en Excel, SharePoint y correos en una aplicación C#/.NET con SQL Server para gestionar altas, actualizaciones, obsolescencia, consultas y trazabilidad.
+- Modelé la base relacional y el acceso con Entity Framework para administrar solicitudes de revisión, estados, números de trazabilidad e historial auditable de cambios.
+- Implementé autenticación con Active Directory, roles y permisos para restringir funciones críticas y reducir riesgo de edición o borrado no autorizado.
+- Diseñé formularios, validaciones y flujos de aprobación con mejoras proyectadas: actualización de metadatos de 20 a 3 minutos, generación automática de trazabilidad tras revisión y prevención de folios duplicados/corruptos.
 
----
+**Stack:** C#/.NET, Windows Forms, SQL Server, Entity Framework, Active Directory, SharePoint, Krypton Toolkit, SDLC.
 
-## Proyectos Destacados
+## Proyectos Seleccionados
+### D-MOX — Plataforma de inteligencia política
+**2026 | Repositorio privado | Full-stack + IA**
 
-### NUE.AI — Asistente de Estilo con IA
-- Arquitectura de una plataforma que utiliza modelos de visión (GPT-4o, Gemini) logrando una **precisión del 92%** en la clasificación automática de prendas.
-- Implementación de pipelines multimodales (imagen + texto) para sugerencias personalizadas, optimizando la latencia en un 30%.
+- Construí una plataforma que convierte fuentes de noticias en entidades, sentimiento, clusters, reportes y grafos de poder para análisis político y monitoreo de medios.
+- **Stack:** Python, FastAPI, Next.js, PostgreSQL, pgvector, Celery, Redis, spaCy, Gemini, Docker.
 
-### WISPRLOCAL — Dictado por Voz 100% Local
-- Aplicación nativa para dictado local con Whisper, alcanzando una **latencia <500ms** en hardware de consumo.
-- Sistema de actualización automática y empaquetado cross-platform (PyInstaller), con 500+ descargas.
+### [WisprLocal — Dictado de voz 100% local](https://github.com/p5Patricio/WisprLocal)
+**2026 | GitHub público**
 
-### DEMOX — Inteligencia Política
-- Pipeline NLP con spaCy y Gemini para análisis de sentimiento en tiempo real (1,000+ noticias diarias).
-- Optimización de búsqueda semántica con pgvector, mejorando la relevancia de resultados en un 40%.
+- Desarrollé una herramienta offline de dictado que transcribe voz con Whisper/faster-whisper, inyecta texto en apps de escritorio y mantiene privacidad sin APIs externas.
+- **Stack:** Python, Whisper, faster-whisper, CUDA/CPU, Tkinter, PyInstaller, hotkeys, cross-platform.
 
----
+### [NBA Player Profiling — Machine Learning deportivo](https://github.com/p5Patricio/Clasificador_Entrenador-NBA)
+**2025 | GitHub público**
+
+- Implementé un backend que agrupa jugadores NBA con K-Means, compara perfiles por cluster/equipo y genera reportes PDF con gráficos radar para apoyo de entrenamiento.
+- **Stack:** Python, FastAPI, scikit-learn, Pandas, NBA API, PDF reports, Next.js.
+
+### [Symmetrical Code — Landing bilingüe de software studio](https://github.com/p5Patricio/Symmetrical-Code)
+**2026 | [Demo](https://symmetrical-code.vercel.app) | GitHub público**
+
+- Desarrollé una experiencia web bilingüe con galería de proyectos, contenido localizado ES/EN, pruebas automatizadas y despliegue en Vercel.
+- **Stack:** React, TypeScript, Vite, i18next, Tailwind CSS, Vitest, Vercel.
 
 ## Educación
-**Universidad de Guanajuato (DICIS)**
-Ingeniería en Sistemas Computacionales | *Titulado Dic 2025*
-- **Promedio:** 9.4 / 10.0
-- Cursos: Computer Vision, Software Architecture, Distributed Systems.
+**Universidad de Guanajuato (DICIS)** — Ingeniería en Sistemas Computacionales
+
+Salamanca, Gto., México | Titulado, Dic 2025
+
+- **Promedio:** 9.4/10.0.
+- **Enfoque:** arquitectura de software, bases de datos, IA/ML, visión por computadora y desarrollo full-stack.

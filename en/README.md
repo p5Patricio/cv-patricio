@@ -1,60 +1,64 @@
-# Patricio García — AI Software Engineer
+# Patricio Antonio García Pérez Vela — Resume
 
-**AI Solutions Architect | Full-Stack Developer | AI-Assisted Dev**
+**Software Engineer | Full-Stack, AI & Data Systems**
 
-- **Location:** Guanajuato, Mexico
-- **Email:** [pa.garciaperezvela@ugto.mx](mailto:pa.garciaperezvela@ugto.mx)
-- **Phone:** +52 473 737 4224
-- **LinkedIn:** [patricioagpv](https://linkedin.com/in/patricioagpv)
-- **GitHub:** [p5patricio](https://github.com/p5patricio)
-- **Portfolio:** [portafolio.patodev.com](https://portafolio.patodev.com)
+Guanajuato, Mexico | +52 473 737 4224 | [pa.garciaperezvela@ugto.mx](mailto:pa.garciaperezvela@ugto.mx)
 
----
+[LinkedIn](https://linkedin.com/in/patricioagpv) | [GitHub](https://github.com/p5Patricio) | [Portfolio](https://portafolio.patodev.com)
 
-## Professional Summary
-AI Solutions Architect & Full Stack Engineer specialized in deploying **Autonomous Agents** and local LLMs. With a solid foundation in Computer Systems Engineering (GPA 3.8/4.0), I excel in optimizing development workflows via SDD methodologies and computer vision. At Mazda, I implemented solutions that **reduced operational times by 85%**. Expert in Python, TypeScript, and modern data architectures.
-
----
+## Profile
+Computer Systems Engineer focused on full-stack products, automation, applied AI, and data systems. At Mazda, I built an IT document-management system that replaces Excel/email-based controls with role-based workflows, validations, traceability, and SQL Server revision history. Main stack: Python/FastAPI, TypeScript/Next.js, C#/.NET, PostgreSQL/pgvector, Docker, and NLP/voice models.
 
 ## Technical Skills
-- **AI & LLMs:** LLM Integration, GPT-4o, Groq API, Gemini API, Whisper, OpenAI API, Multimodal AI, Computer Vision, NLP, Embeddings, RAG, pgvector, Semantic Search.
-- **Languages:** Python, TypeScript, JavaScript, C#, SQL, HTML/CSS.
-- **Frameworks:** FastAPI, Express.js, Node.js, React, Next.js, React Native, Expo, .NET, TensorFlow, spaCy, NumPy, OpenCV, MediaPipe.
-- **Databases:** PostgreSQL, SQL Server, MongoDB, Firebase, Supabase, pgvector.
-- **Cloud & DevOps:** Docker, Vercel, Render, Fly.io, GitHub Actions, CI/CD, Linux, WSL2.
-- **Tools:** Git, REST API, Jest, PyInstaller, Web Scraping, RSS, SDLC, Agile, Scrum.
-
----
+- **Full-stack:** TypeScript, JavaScript, React, Next.js, Node.js, Express, FastAPI, REST APIs, HTML/CSS.
+- **AI, data & ML:** Python, Pandas, scikit-learn, spaCy, TensorFlow, Whisper/faster-whisper, Gemini/OpenAI APIs, embeddings, pgvector, NLP, computer vision.
+- **Databases:** PostgreSQL, SQL Server, MongoDB, Supabase, Entity Framework, Alembic.
+- **Cloud, DevOps & tools:** Docker, GitHub Actions, Vercel, Render, Fly.io, Git, Linux, WSL2, Scrum/SDLC.
+- **Enterprise:** C#/.NET, Windows Forms, Active Directory, SharePoint.
+- **Languages:** Spanish native, English B2.
 
 ## Professional Experience
+### Mazda Motor Manufacturing de México — Software Engineer Intern
+**Salamanca, Guanajuato, Mexico | Aug 2025 — Feb 2026**
 
-### Mazda Motor Manufacturing de México
-**Software Engineer (Intern)** | *Aug 2025 – Feb 2026*
+*IT Document Management Digitalization FY25*
 
-- Designed and implemented an end-to-end DMS in C#/.NET with SQL Server, **reducing search and update times by 85%** and completely eliminating manual data redundancy.
-- Led integration with Active Directory and SharePoint, automating approval workflows that **eliminated 100% of manual errors** in document traceability.
-- Delivered the project under Agile/Scrum methodology, meeting corporate SDLC standards.
+- Transformed an Excel, SharePoint, and email-based document process into a C#/.NET desktop application with SQL Server for creation, updates, obsolescence, search, and traceability.
+- Modeled the relational database and Entity Framework data access for review requests, document states, traceability numbers, and auditable revision history.
+- Implemented Active Directory authentication, roles, and permissions to restrict critical operations and reduce the risk of unauthorized edits or deletion.
+- Designed forms, validations, and approval workflows with projected improvements: metadata updates from 20 to 3 minutes, automatic traceability generation after review, and prevention of duplicate/corrupted folios.
 
----
+**Stack:** C#/.NET, Windows Forms, SQL Server, Entity Framework, Active Directory, SharePoint, Krypton Toolkit, SDLC.
 
-## Key Projects
+## Selected Projects
+### D-MOX — Political Intelligence Platform
+**2026 | Private repository | Full-stack + AI**
 
-### NUE.AI — AI-Powered Style Assistant
-- Architected a platform using vision models (GPT-4o, Gemini) achieving **92% accuracy** in automatic clothing classification.
-- Implemented multimodal pipelines (image + text) for personalized suggestions, optimizing response latency by 30%.
+- Built a platform that turns news sources into entities, sentiment, clusters, reports, and power graphs for political analysis and media monitoring.
+- **Stack:** Python, FastAPI, Next.js, PostgreSQL, pgvector, Celery, Redis, spaCy, Gemini, Docker.
 
-### WISPRLOCAL — 100% Local Voice Dictation
-- Developed a native application for local dictation with Whisper, reaching **latency <500ms** on consumer hardware.
-- Auto-update system and cross-platform packaging (PyInstaller), with 500+ downloads.
+### [WisprLocal — 100% Local Voice Dictation](https://github.com/p5Patricio/WisprLocal)
+**2026 | Public GitHub repository**
 
-### DEMOX — Political Intelligence Platform
-- NLP pipeline with spaCy and Gemini for real-time sentiment analysis (1,000+ daily news items).
-- Optimized semantic search with pgvector, improving cross-information relevance by 40%.
+- Developed an offline dictation tool that transcribes speech with Whisper/faster-whisper, injects text into desktop apps, and preserves privacy without external APIs.
+- **Stack:** Python, Whisper, faster-whisper, CUDA/CPU, Tkinter, PyInstaller, hotkeys, cross-platform.
 
----
+### [NBA Player Profiling — Sports Machine Learning](https://github.com/p5Patricio/Clasificador_Entrenador-NBA)
+**2025 | Public GitHub repository**
+
+- Implemented an ML backend that clusters NBA players with K-Means, compares player/team profiles, and generates PDF radar reports for coaching insights.
+- **Stack:** Python, FastAPI, scikit-learn, Pandas, NBA API, PDF reports, Next.js.
+
+### [Symmetrical Code — Bilingual Software Studio Landing](https://github.com/p5Patricio/Symmetrical-Code)
+**2026 | [Live demo](https://symmetrical-code.vercel.app) | Public GitHub repository**
+
+- Developed a bilingual web experience with a project gallery, ES/EN localization, automated tests, and Vercel deployment.
+- **Stack:** React, TypeScript, Vite, i18next, Tailwind CSS, Vitest, Vercel.
 
 ## Education
-**Universidad de Guanajuato (DICIS)**
-B.S. in Computer Systems Engineering | *Graduated Dec 2025*
-- **GPA:** 3.8 / 4.0 (9.4/10.0)
-- Relevant Coursework: Computer Vision, Software Architecture, Distributed Systems.
+**Universidad de Guanajuato (DICIS)** — Computer Systems Engineering
+
+Salamanca, Guanajuato, Mexico | Graduated, Dec 2025
+
+- **GPA:** 9.4/10.0.
+- **Focus:** software architecture, databases, AI/ML, computer vision, and full-stack development.

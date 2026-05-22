@@ -1,159 +1,138 @@
 % ============================================================
-% PATRICIO GARCIA — AI SOFTWARE ENGINEER CV (ESPAÑOL)
-% ATS-Friendly | Single Column | 1 Page | Modern Clean Design
+% Patricio Garcia Perez Vela -- CV (Espanol)
+% ATS-friendly | Single column | One page | No photo
 % ============================================================
-\documentclass[9pt,a4paper]{article}
+\documentclass[10pt,letterpaper]{article}
+
+% ---------- ATS / COPY-PASTE FRIENDLINESS ----------
+\IfFileExists{glyphtounicode.tex}{\input{glyphtounicode}}{}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+\usepackage{cmap}
 
 % ---------- PAGE GEOMETRY ----------
-\usepackage[margin=0.48in, top=0.38in, bottom=0.38in]{geometry}
+\usepackage[letterpaper,margin=0.55in,top=0.45in,bottom=0.5in]{geometry}
 
 % ---------- FONTS & TEXT ----------
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{microtype}
-\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\setstretch{0.97}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\raggedright
+\sloppy
 
 % ---------- COLORS ----------
 \usepackage{xcolor}
 \definecolor{headingcolor}{HTML}{1a2744}
-\definecolor{accentcolor}{HTML}{2c3e63}
-\definecolor{stackcolor}{HTML}{555555}
+\definecolor{textmuted}{HTML}{555555}
 \definecolor{linkcolor}{HTML}{1a2744}
 
 % ---------- LINKS ----------
-\usepackage[colorlinks=true, linkcolor=linkcolor, urlcolor=linkcolor, citecolor=linkcolor]{hyperref}
+\usepackage[colorlinks=true,linkcolor=linkcolor,urlcolor=linkcolor,citecolor=linkcolor]{hyperref}
+\urlstyle{same}
+\hypersetup{
+  pdftitle={CV - Patricio Antonio Garcia Perez Vela},
+  pdfauthor={Patricio Antonio Garcia Perez Vela}
+}
 
 % ---------- SECTION STYLING ----------
 \usepackage{titlesec}
-\titleformat{\section}
-  {\normalsize\bfseries\color{headingcolor}\sffamily}
-  {}
-  {0em}
-  {}
-  [\vspace{-0.6em}\textcolor{headingcolor}{\rule{\linewidth}{0.8pt}}]
-
+\titleformat{\section}{\large\bfseries\color{headingcolor}}{}{0em}{}[\vspace{-0.55em}\textcolor{headingcolor}{\rule{\linewidth}{0.7pt}}]
 \titlespacing*{\section}{0pt}{0.55em}{0.25em}
-
-% ---------- CUSTOM COMMANDS ----------
-\newcommand{\jobtitle}[4]{%
-  \noindent\textbf{#1}\hfill\textcolor{stackcolor}{\scriptsize #2}\\[-0.2em]
-  \textit{\scriptsize #3}\hfill\textcolor{stackcolor}{\scriptsize #4}%
-}
-
-\newcommand{\projecttitle}[3]{%
-  \noindent\textbf{#1}\hfill\textcolor{stackcolor}{\scriptsize #2}\\[-0.2em]
-  \textit{\scriptsize #3}%
-}
-
-\newcommand{\techstack}[1]{%
-  \vspace{0.05em}%
-  {\scriptsize\textcolor{stackcolor}{\textit{Stack: #1}}}%
-}
 
 % ---------- LISTS ----------
 \usepackage{enumitem}
-\setlist[itemize]{leftmargin=1.2em, label=\textcolor{headingcolor}{\textbullet}, nosep, topsep=0.05em, itemsep=0.02em, parsep=0pt}
+\setlist[itemize]{leftmargin=1.15em,label=\textcolor{headingcolor}{\textbullet},nosep,topsep=0.05em,itemsep=0.05em,parsep=0pt}
 
-% ---------- SPACING ----------
-\usepackage{setspace}
-\setstretch{0.98}
+% ---------- CUSTOM COMMANDS ----------
+\newcommand{\roleentry}[4]{%
+  \noindent\textbf{#1}\hfill{\small\textcolor{textmuted}{#2}}\\[-0.15em]
+  {\small\textit{#3}}\hfill{\small\textcolor{textmuted}{#4}}%
+}
 
-\setlength{\parskip}{0pt}
-\setlength{\parindent}{0pt}
+\newcommand{\projectentry}[3]{%
+  \noindent\textbf{#1}\hfill{\small\textcolor{textmuted}{#2}}\\[-0.15em]
+  {\small\textit{#3}}%
+}
 
-% ---------- DOCUMENT ----------
+\newcommand{\stack}[1]{%
+  \vspace{0.03em}{\scriptsize\textcolor{textmuted}{\textit{Stack: #1}}}%
+}
+
 \begin{document}
 \pagestyle{empty}
 \sffamily
 
 % ==================== HEADER ====================
 \begin{center}
-  {\Large\bfseries\color{headingcolor} PATRICIO GARC\'IA}\\[0.2em]
-  {\small\color{accentcolor} AI Software Engineer \textbar{} Full-Stack Developer \textbar{} AI-Assisted Dev}\\[0.3em]
-  {\footnotesize
-    Guanajuato, M\'exico \textbar{}
-    \href{mailto:pa.garciaperezvela@ugto.mx}{pa.garciaperezvela@ugto.mx} \textbar{}
-    +52 473 737 4224}\\[0.1em]
-  {\footnotesize
-    \href{https://linkedin.com/in/patricioagpv}{linkedin.com/in/patricioagpv} \textbar{}
-    \href{https://github.com/p5patricio}{github.com/p5patricio} \textbar{}
-    \href{https://portafolio.patodev.com}{portafolio.patodev.com}}\\[0.1em]
-  {\scriptsize\textcolor{stackcolor}{Open to remote \textbullet{} Dispuesto a relocalizarme \textbullet{} Disponible inmediatamente}}
+  {\LARGE\bfseries\color{headingcolor} Patricio Antonio García Pérez Vela}\\[0.18em]
+  {\small Software Engineer \textbar{} Full-Stack, AI \& Data Systems}\\[0.28em]
+  {\footnotesize Guanajuato, México \textbar{} +52 473 737 4224 \textbar{} \href{mailto:pa.garciaperezvela@ugto.mx}{pa.garciaperezvela@ugto.mx}}\\[0.12em]
+  {\footnotesize \href{https://linkedin.com/in/patricioagpv}{linkedin.com/in/patricioagpv} \textbar{} \href{https://github.com/p5Patricio}{github.com/p5Patricio} \textbar{} \href{https://portafolio.patodev.com}{portafolio.patodev.com}}
 \end{center}
 
-\vspace{0.1em}
+\vspace{0.08em}
 
-% ==================== RESUMEN PROFESIONAL ====================
-\section{Resumen Profesional}
-\vspace{-0.15em}
-{\small AI Solutions Architect \& Full Stack Engineer especializado en el despliegue de \textbf{Agentes Aut\'onomos} y LLMs locales. Con una s\'olida base en Ingenier\'ia de Sistemas (Promedio 9.4/10), me destaco por optimizar flujos de desarrollo mediante metodolog\'ias SDD y visi\'on por computadora. En Mazda, implement\'e soluciones que \textbf{redujeron tiempos operativos en un 85\%}. Experto en Python, TypeScript y arquitecturas de datos modernas.}
+% ==================== SUMMARY ====================
+\section{Perfil}
+{\small Ingeniero en Sistemas Computacionales enfocado en productos full-stack, automatización, IA aplicada y sistemas de datos. En Mazda construí un sistema de gestión documental para TI que reemplaza controles basados en Excel/correo por flujos con roles, validaciones, trazabilidad e historial en SQL Server. Trabajo principalmente con Python/FastAPI, TypeScript/Next.js, C\#/.NET, PostgreSQL/pgvector, Docker y modelos de NLP/voz.}
 
-% ==================== HABILIDADES TÉCNICAS ====================
-\section{Habilidades T\'ecnicas}
-\vspace{-0.15em}
+% ==================== SKILLS ====================
+\section{Habilidades Técnicas}
 {\small
-\textbf{AI \& LLMs:} LLM Integration \textbar{} GPT-4o \textbar{} Groq API \textbar{} Gemini API \textbar{} Whisper \textbar{} OpenAI API \textbar{} Multimodal AI \textbar{} Computer Vision \textbar{} NLP \textbar{} Embeddings \textbar{} RAG \textbar{} pgvector \textbar{} Semantic Search \textbar{} Real-time Inference\\[0.06em]
-\textbf{Lenguajes:} Python \textbar{} TypeScript \textbar{} JavaScript \textbar{} C\# \textbar{} SQL \textbar{} HTML/CSS\\[0.06em]
-\textbf{Frameworks:} FastAPI \textbar{} Express.js \textbar{} Node.js \textbar{} React \textbar{} Next.js \textbar{} React Native \textbar{} Expo \textbar{} .NET \textbar{} TensorFlow \textbar{} spaCy \textbar{} NumPy \textbar{} OpenCV \textbar{} MediaPipe\\[0.06em]
-\textbf{Bases de Datos:} PostgreSQL \textbar{} SQL Server \textbar{} MongoDB \textbar{} Firebase \textbar{} Supabase \textbar{} pgvector \quad
-\textbf{Cloud \& DevOps:} Docker \textbar{} Vercel \textbar{} Render \textbar{} Fly.io \textbar{} GitHub Actions \textbar{} CI/CD \textbar{} Linux \textbar{} WSL2\\[0.06em]
-\textbf{Tools:} Git \textbar{} REST API \textbar{} Jest \textbar{} PyInstaller \textbar{} Web Scraping \textbar{} RSS \textbar{} SDLC \textbar{} Agile \textbar{} Scrum
+\textbf{Full-stack:} TypeScript, JavaScript, React, Next.js, Node.js, Express, FastAPI, REST APIs, HTML/CSS.\\[0.04em]
+\textbf{IA, datos y ML:} Python, Pandas, scikit-learn, spaCy, TensorFlow, Whisper/faster-whisper, Gemini/OpenAI APIs, embeddings, pgvector, NLP, visión por computadora.\\[0.04em]
+\textbf{Bases de datos:} PostgreSQL, SQL Server, MongoDB, Supabase, Entity Framework, Alembic.\\[0.04em]
+\textbf{Cloud, DevOps y herramientas:} Docker, GitHub Actions, Vercel, Render, Fly.io, Git, Linux, WSL2, Scrum/SDLC.\\[0.04em]
+\textbf{Enterprise:} C\#/.NET, Windows Forms, Active Directory, SharePoint. \textbf{Idiomas:} Español nativo, inglés B2.
 }
 
-% ==================== EXPERIENCIA PROFESIONAL ====================
+% ==================== EXPERIENCE ====================
 \section{Experiencia Profesional}
-\vspace{-0.15em}
-
-\jobtitle{MAZDA MOTOR MANUFACTURING DE M\'EXICO}{Salamanca, Guanajuato, M\'exico}{Ingeniero de Software (Intern)}{Ago 2025 -- Feb 2026}
-
-{\scriptsize\textit{Proyecto: ``IT Document Management Digitalization FY25''}}
+\roleentry{Mazda Motor Manufacturing de México}{Salamanca, Gto., México}{Software Engineer Intern -- IT Document Management Digitalization FY25}{Ago 2025 -- Feb 2026}
 \begin{itemize}
-  \item{\small Dise\~n\'e e implement\'e un DMS end-to-end en C\#/.NET con SQL Server, \textbf{reduciendo los tiempos de b\'usqueda y actualizaci\'on en un 85\%} y eliminando por completo la redundancia de datos manual.}
-  \item{\small Lider\'e la integraci\'on con Active Directory y SharePoint, automatizando flujos de aprobaci\'on que \textbf{eliminaron el 100\% de los errores manuales} de trazabilidad documental.}
-  \item{\small Entregu\'e el proyecto bajo metodolog\'ia Agile/Scrum, cumpliendo con los est\'andares SDLC corporativos y garantizando la escalabilidad del sistema.}
+  \item {\small Transformé un proceso documental basado en Excel, SharePoint y correos en una aplicación C\#/.NET con SQL Server para gestionar altas, actualizaciones, obsolescencia, consultas y trazabilidad.}
+  \item {\small Modelé la base relacional y el acceso con Entity Framework para administrar solicitudes de revisión, estados, números de trazabilidad e historial auditable de cambios.}
+  \item {\small Implementé autenticación con Active Directory, roles y permisos para restringir funciones críticas y reducir riesgo de edición o borrado no autorizado.}
+  \item {\small Diseñé formularios, validaciones y flujos de aprobación con mejoras proyectadas: actualización de metadatos de 20 a 3 minutos, generación automática de trazabilidad tras revisión y prevención de folios duplicados/corruptos.}
 \end{itemize}
-\techstack{C\# \textbar{} .NET \textbar{} SQL Server \textbar{} Entity Framework \textbar{} Active Directory \textbar{} SharePoint \textbar{} SDLC \textbar{} Scrum}
+\stack{C\#/.NET, Windows Forms, SQL Server, Entity Framework, Active Directory, SharePoint, Krypton Toolkit, SDLC}
 
-\vspace{0.18em}
-
-% ==================== PROYECTOS ====================
-\section{Proyectos}
-\vspace{-0.15em}
-
-\projecttitle{\href{https://github.com/p5patricio}{NUE.AI} -- Asistente de Estilo con IA}{2025 -- Presente}{Proyecto Personal \textbar{} \href{https://github.com/p5patricio}{github.com/p5patricio}}
+% ==================== PROJECTS ====================
+\section{Proyectos Seleccionados}
+\projectentry{D-MOX -- Plataforma de inteligencia política}{2026}{Repositorio privado \textbar{} Full-stack + IA}
 \begin{itemize}
-  \item{\small Arquitectura de una plataforma que utiliza modelos de visi\'on (GPT-4o, Gemini) logrando una \textbf{precisi\'on del 92\%} en la clasificaci\'on autom\'atica de prendas.}
-  \item{\small Implementaci\'on de pipelines multimodales (imagen + texto) para sugerencias personalizadas, optimizando la latencia de respuesta en un 30\% mediante caché estratégico.}
+  \item {\small Construí una plataforma que convierte fuentes de noticias en entidades, sentimiento, clusters, reportes y grafos de poder para análisis político y monitoreo de medios.}
 \end{itemize}
-\techstack{Python \textbar{} FastAPI \textbar{} Next.js \textbar{} PostgreSQL \textbar{} GPT-4o API \textbar{} Gemini API \textbar{} React \textbar{} TypeScript \textbar{} Docker}
+\stack{Python, FastAPI, Next.js, PostgreSQL, pgvector, Celery, Redis, spaCy, Gemini, Docker}
 
-\vspace{0.15em}
-
-\projecttitle{\href{https://github.com/p5patricio/WisprLocal}{WISPRLOCAL} -- Dictado por Voz 100\% Local}{Abr 2026 \textbar{} Release: v1.1.0}{Proyecto Personal \textbar{} \href{https://github.com/p5patricio/WisprLocal}{github.com/p5patricio/WisprLocal}}
+\vspace{0.13em}
+\projectentry{\href{https://github.com/p5Patricio/WisprLocal}{WisprLocal} -- Dictado de voz 100\% local}{2026}{\href{https://github.com/p5Patricio/WisprLocal}{github.com/p5Patricio/WisprLocal}}
 \begin{itemize}
-  \item{\small Desarrollo de aplicaci\'on nativa para dictado local con Whisper, alcanzando una \textbf{latencia $<$500ms} en hardware de consumo (RTX 4060).}
-  \item{\small Implementaci\'on de sistema de actualizaci\'on autom\'atica y empaquetado cross-platform con PyInstaller, superando las 500+ descargas en la comunidad.}
+  \item {\small Desarrollé una herramienta offline de dictado que transcribe voz con Whisper/faster-whisper, inyecta texto en apps de escritorio y mantiene privacidad sin APIs externas.}
 \end{itemize}
-\techstack{Python \textbar{} Whisper \textbar{} faster-whisper \textbar{} CustomTkinter \textbar{} PyInstaller \textbar{} GitHub Actions \textbar{} WSL2}
+\stack{Python, Whisper, faster-whisper, CUDA/CPU, Tkinter, PyInstaller, hotkeys, cross-platform}
 
-\vspace{0.15em}
-
-\projecttitle{\href{https://github.com/p5patricio}{DEMOX} -- Plataforma de Inteligencia Pol\'itica}{2025 -- 2026}{Proyecto Personal \textbar{} \href{https://github.com/p5patricio}{github.com/p5patricio}}
+\vspace{0.13em}
+\projectentry{\href{https://github.com/p5Patricio/Clasificador_Entrenador-NBA}{NBA Player Profiling} -- Machine Learning deportivo}{2025}{\href{https://github.com/p5Patricio/Clasificador_Entrenador-NBA}{GitHub}}
 \begin{itemize}
-  \item{\small Pipeline NLP con spaCy y Gemini para an\'alisis de sentimiento en tiempo real, procesando m\'as de 1,000 noticias diarias con detecci\'on autom\'atica de entidades.}
-  \item{\small Optimizaci\'on de b\'usqueda sem\'antica con pgvector, mejorando la relevancia de los resultados de cruce de informaci\'on en un 40\%.}
+  \item {\small Implementé un backend que agrupa jugadores NBA con K-Means, compara perfiles por cluster/equipo y genera reportes PDF con gráficos radar para apoyo de entrenamiento.}
 \end{itemize}
-\techstack{Python \textbar{} FastAPI \textbar{} Next.js \textbar{} PostgreSQL \textbar{} pgvector \textbar{} Supabase \textbar{} spaCy \textbar{} Gemini API \textbar{} Docker \textbar{} RSS}
+\stack{Python, FastAPI, scikit-learn, Pandas, NBA API, PDF reports, Next.js}
 
-\vspace{0.12em}
-
-% ==================== EDUCACIÓN ====================
-\section{Educaci\'on}
-\vspace{-0.15em}
-
-\jobtitle{UNIVERSIDAD DE GUANAJUATO (DICIS)}{Salamanca, Guanajuato, M\'exico}{Ingenier\'ia en Sistemas Computacionales -- Titulado Dic 2025}{}
+\vspace{0.13em}
+\projectentry{\href{https://github.com/p5Patricio/Symmetrical-Code}{Symmetrical Code} -- Landing bilingüe de software studio}{2026}{\href{https://symmetrical-code.vercel.app}{symmetrical-code.vercel.app} \textbar{} \href{https://github.com/p5Patricio/Symmetrical-Code}{GitHub}}
 \begin{itemize}
-  \item{\small\textbf{Promedio: 9.4 / 10.0} --- Cursos relevantes: Computer Vision \textbar{} Software Architecture \textbar{} Distributed Systems \textbar{} Advanced Databases}
+  \item {\small Desarrollé una experiencia web bilingüe con galería de proyectos, contenido localizado ES/EN, pruebas automatizadas y despliegue en Vercel.}
 \end{itemize}
+\stack{React, TypeScript, Vite, i18next, Tailwind CSS, Vitest, Vercel}
+
+% ==================== EDUCATION ====================
+\section{Educación}
+\roleentry{Universidad de Guanajuato (DICIS)}{Salamanca, Gto., México}{Ingeniería en Sistemas Computacionales -- Titulado}{Dic 2025}
+{\small Promedio: \textbf{9.4/10.0}. Enfoque: arquitectura de software, bases de datos, IA/ML, visión por computadora y desarrollo full-stack.}
 
 \end{document}
