@@ -31,23 +31,23 @@ Recent Computer Systems Engineering graduate focused on full-stack products, aut
 **Stack:** C#/.NET, Windows Forms, SQL Server, Entity Framework, Active Directory, SharePoint, Krypton Toolkit, SDLC.
 
 ## Selected Projects
-### D-MOX — Political Intelligence Platform
+### DEMOX — Political Intelligence Platform
 **2026 | Private repository | Full-stack + AI**
 
-- Built a platform that turns news sources into entities, sentiment, clusters, reports, and power graphs for political analysis and media monitoring.
-- **Stack:** Python, FastAPI, Next.js, PostgreSQL, pgvector, Celery, Redis, spaCy, Gemini, Docker.
+- Built a political media intelligence platform using Next.js and FastAPI. Implemented interactive party trend dashboards, data freshness alerts, evidence-backed reports, and background processing with Celery/Redis.
+- **Stack:** Python, FastAPI, Next.js, PostgreSQL/Supabase, pgvector, Celery, Redis, spaCy, Gemini, Docker.
 
-### [WisprLocal — 100% Local Voice Dictation](https://github.com/p5Patricio/WisprLocal)
+### [WhisperKey — 100% Local Voice Dictation](https://github.com/p5Patricio/WhisperKey)
 **2026 | Public GitHub repository**
 
-- Developed an offline dictation tool that transcribes speech with Whisper/faster-whisper, injects text into desktop apps, and preserves privacy without external APIs.
-- **Stack:** Python, Whisper, faster-whisper, CUDA/CPU, Tkinter, PyInstaller, hotkeys, cross-platform.
+- Developed a bilingual offline voice dictation application transcribing in real-time on GPU using Whisper. Features automatic hardware detection, interactive setup wizard, and a CustomTkinter graphical installer.
+- **Stack:** Python, Whisper, faster-whisper, CustomTkinter, CUDA, PyInstaller, hotkeys, cross-platform.
 
 ### [NBA Player Profiling — Sports Machine Learning](https://github.com/p5Patricio/Clasificador_Entrenador-NBA)
 **2025 | Public GitHub repository**
 
-- Implemented an ML backend that clusters NBA players with K-Means, compares player/team profiles, and generates PDF radar reports for coaching insights.
-- **Stack:** Python, FastAPI, scikit-learn, Pandas, NBA API, PDF reports, Next.js.
+- Restructured into a monorepo with a FastAPI backend and a Next.js frontend (Tailwind v4 & Chart.js). Clusters players via K-Means using official NBA API statistics and generates interactive dashboards and PDF reports.
+- **Stack:** Python, FastAPI, Next.js (TypeScript), scikit-learn, Pandas, NBA API, Chart.js, Tailwind v4.
 
 ### Fitodex — Agrochemical Control for DICIVA
 **2024 – 2025 | Universidad de Guanajuato project | Private repository**
