@@ -1,0 +1,137 @@
+% ============================================================
+% Patricio Garcia Perez Vela -- CV (Espanol)
+% Adaptado para: Desarrollador Python Jr en ALTEN Mexico
+% ATS-friendly | Single column | One page | No photo
+% ============================================================
+\documentclass[10pt,letterpaper]{article}
+
+% ---------- ATS / COPY-PASTE FRIENDLINESS ----------
+\ifdefined\pdfglyphtounicode
+  \IfFileExists{glyphtounicode.tex}{\input{glyphtounicode}}{}
+  \pdfgentounicode=1
+\fi
+\usepackage{cmap}
+
+% ---------- PAGE GEOMETRY ----------
+\usepackage[letterpaper,margin=0.55in,top=0.45in,bottom=0.5in]{geometry}
+
+% ---------- FONTS & TEXT ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{0.96}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\raggedright
+\sloppy
+
+% ---------- COLORS ----------
+\usepackage{xcolor}
+\definecolor{headingcolor}{HTML}{1a2744}
+\definecolor{textmuted}{HTML}{555555}
+\definecolor{linkcolor}{HTML}{1a2744}
+
+% ---------- LINKS ----------
+\usepackage[colorlinks=true,linkcolor=linkcolor,urlcolor=linkcolor,citecolor=linkcolor]{hyperref}
+\urlstyle{same}
+\hypersetup{
+  pdftitle={CV - Patricio Antonio Garcia Perez Vela - Desarrollador Python Jr},
+  pdfauthor={Patricio Antonio Garcia Perez Vela}
+}
+
+% ---------- SECTION STYLING ----------
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{headingcolor}}{}{0em}{}[\vspace{-0.55em}\textcolor{headingcolor}{\rule{\linewidth}{0.7pt}}]
+\titlespacing*{\section}{0pt}{0.5em}{0.25em}
+
+% ---------- LISTS ----------
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.15em,label=\textcolor{headingcolor}{\textbullet},nosep,topsep=0.05em,itemsep=0.05em,parsep=0pt}
+
+% ---------- CUSTOM COMMANDS ----------
+\newcommand{\roleentry}[4]{%
+  \noindent\textbf{#1}\hfill{\small\textcolor{textmuted}{#2}}\\[-0.15em]
+  {\small\textit{#3}}\hfill{\small\textcolor{textmuted}{#4}}%
+}
+
+\newcommand{\projectentry}[3]{%
+  \noindent\textbf{#1}\hfill{\small\textcolor{textmuted}{#2}}\\[-0.15em]
+  {\small\textit{#3}}%
+}
+
+\newcommand{\stack}[1]{%
+  \vspace{0.03em}{\scriptsize\textcolor{textmuted}{\textit{Stack: #1}}}%
+}
+
+\begin{document}
+\pagestyle{empty}
+\sffamily
+
+% ==================== HEADER ====================
+\begin{center}
+  {\LARGE\bfseries\color{headingcolor} Patricio Antonio García Pérez Vela}\\[0.18em]
+  {\small Software Engineer \textbar{} Desarrollador Python Jr \& Full-Stack Web}\\[0.28em]
+  {\footnotesize Guanajuato, México \textbar{} +52 473 737 4224 \textbar{} \href{mailto:pa.garciaperezvela@ugto.mx}{pa.garciaperezvela@ugto.mx}}\\[0.12em]
+  {\footnotesize \href{https://linkedin.com/in/patricioagpv}{linkedin.com/in/patricioagpv} \textbar{} \href{https://github.com/p5Patricio}{github.com/p5Patricio} \textbar{} \href{https://patodev.com/}{patodev.com}}
+\end{center}
+
+\vspace{0.05em}
+
+% ==================== SUMMARY ====================
+\section{Perfil}
+{\small Ingeniero en Sistemas Computacionales recién titulado enfocado en desarrollo full-stack de aplicaciones web robustas basadas en Python (FastAPI, Flask, Django) y TypeScript/Next.js. Dominio en diseño y mantenimiento de bases de datos relacionales SQL (PostgreSQL, SQL Server), desarrollo de REST APIs, contenedores Docker y colaboración en pipelines de CI/CD (GitHub Actions) y despliegues en la nube (GCP). Experiencia comprobada en recopilación de requerimientos de usuario, creación de user stories, estimaciones y documentación técnica bajo metodologías ágiles (Scrum). Inglés Avanzado (B2).}
+
+% ==================== SKILLS ====================
+\section{Habilidades Técnicas}
+{\small
+\textbf{Desarrollo Python \& Web:} Python (POO, estructuras de datos, control de flujo), FastAPI, Flask, Django, REST APIs, TypeScript, JavaScript, React, Next.js, HTML5, CSS3.\\[0.04em]
+\textbf{Bases de Datos (SQL):} PostgreSQL, SQL Server, Supabase, SQLite, SQLModel, Entity Framework, Alembic, diseño y optimización de esquemas relacionales.\\[0.04em]
+\textbf{Cloud, DevOps \& Herramientas:} Google Cloud Platform (GCP), Docker, CI/CD (GitHub Actions), Git, GitHub, Vercel, Render, Linux, WSL2.\\[0.04em]
+\textbf{Ingeniería de Software \& Metodologías:} Scrum, Agile, documentación de requerimientos de usuario, user stories, estimaciones, manuales técnicos.\\[0.04em]
+\textbf{Idiomas:} Español nativo, Inglés Avanzado (B2 -- fluido profesional).
+}
+
+% ==================== EXPERIENCE ====================
+\section{Experiencia Profesional}
+\roleentry{Mazda Motor Manufacturing de México}{Salamanca, Gto., México}{Software Engineer Intern -- IT Document Management Digitalization FY25}{Ago 2025 -- Feb 2026}
+\begin{itemize}
+  \item {\small Digitalicé un proceso crítico de TI basado en Excel y SharePoint mediante una solución centralizada con SQL Server, garantizando la integridad de datos, trazabilidad auditable y prevención de folios duplicados.}
+  \item {\small Lideré el levantamiento y documentación de requerimientos con stakeholders, elaboración de user stories, estimaciones y manuales técnicos bajo metodologías ágiles.}
+  \item {\small Modelé la base de datos relacional y el acceso con Entity Framework, restringiendo operaciones críticas con autenticación Active Directory y control de acceso basado en roles (RBAC).}
+  \item {\small Reduje el tiempo de actualización de metadatos de 20 a 3 minutos por solicitud e implementé la generación automática de trazabilidad.}
+\end{itemize}
+\stack{Python, C\#/.NET, SQL Server, Entity Framework, Active Directory, User Stories, Scrum, Documentación Técnica}
+
+% ==================== PROJECTS ====================
+\section{Proyectos Seleccionados}
+\projectentry{\href{https://github.com/p5Patricio/electro-scorpio-control-back}{Electro-Scorpio Control} -- Control de Obras de Electrificación}{2026}{\href{https://github.com/p5Patricio/electro-scorpio-control-back}{GitHub (p5Patricio/electro-scorpio-control-back)} \textbar{} Full-Stack Python}
+\begin{itemize}
+  \item {\small Diseñé y desarrollé una aplicación web full-stack con backend en Python (FastAPI) y PostgreSQL (SQLModel) para la gestión de contratos, matrices de materiales e inventarios de obras.}
+  \item {\small Implementé el frontend interactivo en TypeScript con Next.js, consumiendo endpoints REST validados estrictamente con Pydantic y autenticación JWT.}
+  \item {\small Diseñé esquemas relacionales SQL complejos (8 tablas) para registro de avances diarios, estimaciones y control de materiales.}
+\end{itemize}
+\stack{Python, FastAPI, SQLModel, PostgreSQL, TypeScript, Next.js, HTML/CSS, REST APIs, Git/GitHub}
+
+\vspace{0.13em}
+\projectentry{\href{https://github.com/p5Patricio/Demox-Backend}{DEMOX} -- Plataforma de Inteligencia Política}{2026}{\href{https://github.com/p5Patricio/Demox-Backend}{GitHub (p5Patricio/Demox-Backend)} \textbar{} Full-Stack + Cloud}
+\begin{itemize}
+  \item {\small Desarrollé una plataforma web con backend en Python (FastAPI) y PostgreSQL/Supabase, integrando procesamiento asíncrono con Celery/Redis.}
+  \item {\small Construí contenedores Docker y configuré pipelines de CI/CD con GitHub Actions para automatización de pruebas y despliegues en infraestructura cloud (GCP/Render).}
+\end{itemize}
+\stack{Python, FastAPI, Next.js (TypeScript), PostgreSQL, Docker, CI/CD (GitHub Actions), GCP, Celery, Redis}
+
+\vspace{0.13em}
+\projectentry{\href{https://github.com/p5Patricio/WhisperKey}{WhisperKey} -- Dictado de Voz Offline en Python}{2026}{\href{https://github.com/p5Patricio/WhisperKey}{github.com/p5Patricio/WhisperKey}}
+\begin{itemize}
+  \item {\small Desarrollé una aplicación de dictado por voz 100\% local aplicando Programación Orientada a Objetos (POO) en Python, ejecución GPU multi-hilo y empaquetado ejecutable cross-platform.}
+\end{itemize}
+\stack{Python (POO), Whisper, CustomTkinter, CUDA, PyInstaller, Git/GitHub}
+
+% ==================== EDUCATION ====================
+\section{Educación}
+\roleentry{Universidad de Guanajuato (DICIS)}{Salamanca, Gto., México}{Ingeniería en Sistemas Computacionales -- Titulado}{Dic 2025}
+{\small Promedio: \textbf{9.4/10.0}. Enfoque: Arquitectura de Software, Bases de Datos SQL, Desarrollo Web Full-Stack y Algoritmos.}
+
+\end{document}

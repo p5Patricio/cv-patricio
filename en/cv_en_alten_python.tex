@@ -1,0 +1,137 @@
+% ============================================================
+% Patricio Garcia Perez Vela -- Resume (English)
+% Tailored for: Junior Python Developer at ALTEN Mexico
+% ATS-friendly | Single column | One page | No photo
+% ============================================================
+\documentclass[10pt,letterpaper]{article}
+
+% ---------- ATS / COPY-PASTE FRIENDLINESS ----------
+\ifdefined\pdfglyphtounicode
+  \IfFileExists{glyphtounicode.tex}{\input{glyphtounicode}}{}
+  \pdfgentounicode=1
+\fi
+\usepackage{cmap}
+
+% ---------- PAGE GEOMETRY ----------
+\usepackage[letterpaper,margin=0.55in,top=0.45in,bottom=0.5in]{geometry}
+
+% ---------- FONTS & TEXT ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{0.96}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\raggedright
+\sloppy
+
+% ---------- COLORS ----------
+\usepackage{xcolor}
+\definecolor{headingcolor}{HTML}{1a2744}
+\definecolor{textmuted}{HTML}{555555}
+\definecolor{linkcolor}{HTML}{1a2744}
+
+% ---------- LINKS ----------
+\usepackage[colorlinks=true,linkcolor=linkcolor,urlcolor=linkcolor,citecolor=linkcolor]{hyperref}
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Resume - Patricio Antonio Garcia Perez Vela - Junior Python Developer},
+  pdfauthor={Patricio Antonio Garcia Perez Vela}
+}
+
+% ---------- SECTION STYLING ----------
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{headingcolor}}{}{0em}{}[\vspace{-0.55em}\textcolor{headingcolor}{\rule{\linewidth}{0.7pt}}]
+\titlespacing*{\section}{0pt}{0.5em}{0.25em}
+
+% ---------- LISTS ----------
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.15em,label=\textcolor{headingcolor}{\textbullet},nosep,topsep=0.05em,itemsep=0.05em,parsep=0pt}
+
+% ---------- CUSTOM COMMANDS ----------
+\newcommand{\roleentry}[4]{%
+  \noindent\textbf{#1}\hfill{\small\textcolor{textmuted}{#2}}\\[-0.15em]
+  {\small\textit{#3}}\hfill{\small\textcolor{textmuted}{#4}}%
+}
+
+\newcommand{\projectentry}[3]{%
+  \noindent\textbf{#1}\hfill{\small\textcolor{textmuted}{#2}}\\[-0.15em]
+  {\small\textit{#3}}%
+}
+
+\newcommand{\stack}[1]{%
+  \vspace{0.03em}{\scriptsize\textcolor{textmuted}{\textit{Stack: #1}}}%
+}
+
+\begin{document}
+\pagestyle{empty}
+\sffamily
+
+% ==================== HEADER ====================
+\begin{center}
+  {\LARGE\bfseries\color{headingcolor} Patricio Antonio García Pérez Vela}\\[0.18em]
+  {\small Software Engineer \textbar{} Junior Python Developer \& Full-Stack Web}\\[0.28em]
+  {\footnotesize Guanajuato, Mexico \textbar{} +52 473 737 4224 \textbar{} \href{mailto:pa.garciaperezvela@ugto.mx}{pa.garciaperezvela@ugto.mx}}\\[0.12em]
+  {\footnotesize \href{https://linkedin.com/in/patricioagpv}{linkedin.com/in/patricioagpv} \textbar{} \href{https://github.com/p5Patricio}{github.com/p5Patricio} \textbar{} \href{https://patodev.com/}{patodev.com}}
+\end{center}
+
+\vspace{0.05em}
+
+% ==================== SUMMARY ====================
+\section{Profile}
+{\small Graduate Computer Systems Engineer specializing in full-stack Python web development (FastAPI, Flask, Django) and TypeScript/Next.js. Proficient in SQL relational database design and maintenance (PostgreSQL, SQL Server), RESTful API engineering, Docker containerization, cloud deployment (GCP), and CI/CD pipelines (GitHub Actions). Proven experience gathering user requirements, drafting user stories, estimating tasks, and creating technical documentation under Agile (Scrum) methodologies. Advanced English (B2).}
+
+% ==================== SKILLS ====================
+\section{Technical Skills}
+{\small
+\textbf{Python \& Web Development:} Python (OOP, Data Structures, Control Flow), FastAPI, Flask, Django, REST APIs, TypeScript, JavaScript, React, Next.js, HTML5, CSS3.\\[0.04em]
+\textbf{Databases (SQL):} PostgreSQL, SQL Server, Supabase, SQLite, SQLModel, Entity Framework, Alembic, Relational Schema Design.\\[0.04em]
+\textbf{Cloud, DevOps \& Tools:} Google Cloud Platform (GCP), Docker, CI/CD (GitHub Actions), Git, GitHub, Vercel, Render, Linux, WSL2.\\[0.04em]
+\textbf{Software Engineering \& Agile:} Scrum, Agile SDLC, Requirements Gathering, User Stories, Estimations, Technical Manuals.\\[0.04em]
+\textbf{Languages:} Native Spanish, Advanced English (B2 -- Full Professional Proficiency).
+}
+
+% ==================== EXPERIENCE ====================
+\section{Professional Experience}
+\roleentry{Mazda Motor Manufacturing de México}{Salamanca, Gto., Mexico}{Software Engineer Intern -- IT Document Management Digitalization FY25}{Aug 2025 -- Feb 2026}
+\begin{itemize}
+  \item {\small Digitalized critical IT processes previously relying on Excel/SharePoint into a centralized SQL Server \& C\#/.NET platform with full auditable traceability and duplicate prevention.}
+  \item {\small Led user requirement gathering with stakeholders, authored user stories, calculated delivery estimations, and produced technical manuals under Agile practices.}
+  \item {\small Modeled the relational database schema and Entity Framework data access layer, enforcing Role-Based Access Control (RBAC) integrated with Active Directory.}
+  \item {\small Streamlined metadata update duration from 20 to 3 minutes per request and automated traceability log generation.}
+\end{itemize}
+\stack{Python, C\#/.NET, SQL Server, Entity Framework, Active Directory, User Stories, Scrum, Technical Documentation}
+
+% ==================== PROJECTS ====================
+\section{Selected Projects}
+\projectentry{\href{https://github.com/p5Patricio/electro-scorpio-control-back}{Electro-Scorpio Control} -- Electrification Contract \& Material Matrix Management}{2026}{\href{https://github.com/p5Patricio/electro-scorpio-control-back}{GitHub (p5Patricio/electro-scorpio-control-back)} \textbar{} Full-Stack Python}
+\begin{itemize}
+  \item {\small Architected and developed a full-stack web application with a Python (FastAPI) backend and PostgreSQL (SQLModel) database for contract management and material allocation matrices.}
+  \item {\small Engineered the responsive frontend in TypeScript with Next.js, consuming REST endpoints with strict Pydantic v2 schemas and JWT security.}
+  \item {\small Designed an 8-table relational SQL database to record daily field progress logs, financial estimations, and inventory tracking.}
+\end{itemize}
+\stack{Python, FastAPI, SQLModel, PostgreSQL, TypeScript, Next.js, HTML/CSS, REST APIs, Git/GitHub}
+
+\vspace{0.13em}
+\projectentry{\href{https://github.com/p5Patricio/Demox-Backend}{DEMOX} -- Political Intelligence Platform}{2026}{\href{https://github.com/p5Patricio/Demox-Backend}{GitHub (p5Patricio/Demox-Backend)} \textbar{} Full-Stack + Cloud}
+\begin{itemize}
+  \item {\small Engineered backend web services in Python (FastAPI) backed by PostgreSQL/Supabase and asynchronous background processing via Celery and Redis.}
+  \item {\small Containerized applications using Docker and configured CI/CD pipelines via GitHub Actions for automated testing and cloud deployments (GCP/Render).}
+\end{itemize}
+\stack{Python, FastAPI, Next.js (TypeScript), PostgreSQL, Docker, CI/CD (GitHub Actions), GCP, Celery, Redis}
+
+\vspace{0.13em}
+\projectentry{\href{https://github.com/p5Patricio/WhisperKey}{WhisperKey} -- Offline Voice Dictation App in Python}{2026}{\href{https://github.com/p5Patricio/WhisperKey}{github.com/p5Patricio/WhisperKey}}
+\begin{itemize}
+  \item {\small Developed a 100\% local voice dictation application utilizing OOP principles in Python, multi-threaded GPU inference, and cross-platform executable packaging.}
+\end{itemize}
+\stack{Python (OOP), Whisper, CustomTkinter, CUDA, PyInstaller, Git/GitHub}
+
+% ==================== EDUCATION ====================
+\section{Education}
+\roleentry{Universidad de Guanajuato (DICIS)}{Salamanca, Gto., Mexico}{Bachelor of Science in Computer Systems Engineering -- Graduated}{Dec 2025}
+{\small GPA: \textbf{9.4/10.0}. Focus: Software Architecture, SQL Database Systems, Full-Stack Web Development, and Algorithms.}
+
+\end{document}
