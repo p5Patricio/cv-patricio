@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Patricio García — Software Engineer | Full-Stack, IA & Sistemas de Datos. Portafolio interactivo y descarga de CVs oficiales.">
+  <meta name="keywords" content="Patricio García, Software Engineer, Full-Stack, Python, FastAPI, Next.js, C# .NET, SQL Server, PostgreSQL, Docker, IA, ML, GitHub Pages">
+  <meta name="author" content="Patricio Antonio García Pérez Vela">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Patricio García — Software Engineer & Full-Stack Developer">
+  <meta property="og:description" content="Portafolio interactivo bilingüe y currículum profesional de Patricio García.">
+  <meta property="og:type" content="website">
+
+  <title>Patricio García — Software Engineer & Full-Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="brand-logo">
+        <span class="logo-accent">PG</span>
+        <span>Patricio García</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link active" data-i18n="navAbout">Perfil</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="navSkills">Habilidades</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="navExperience">Experiencia</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="navProjects">Proyectos</a></li>
+          <li><a href="#pdfs" class="nav-link" data-i18n="navPdfs">Descargar CV</a></li>
+          <li><a href="#education" class="nav-link" data-i18n="navEducation">Educación</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <button id="theme-toggle-btn" class="btn-icon" title="Cambiar tema oscuro/claro" aria-label="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <button id="lang-toggle-btn" class="btn-lang" title="Switch Language / Cambiar Idioma" aria-label="Toggle Language">
+          <span class="lang-flag">🌐</span>
+          <span id="lang-label">ES / EN</span>
+        </button>
+        <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Open Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="about" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span id="hero-status">Disponible para nuevas oportunidades</span>
+          </div>
+
+          <h1 id="hero-name" class="hero-name">Patricio Antonio García Pérez Vela</h1>
+          <div id="hero-headline" class="hero-headline">Software Engineer | Full-Stack, IA & Sistemas de Datos</div>
+          <p id="hero-summary" class="hero-summary">
+            Ingeniero en Sistemas Computacionales recién titulado enfocado en desarrollo full-stack de aplicaciones web robustas basadas en Python (FastAPI, Flask, Django) y TypeScript/Next.js. Dominio en diseño y mantenimiento de bases de datos relacionales SQL (PostgreSQL, SQL Server), desarrollo de REST APIs, contenedores Docker y colaboración en pipelines de CI/CD (GitHub Actions) y despliegues en la nube (GCP).
+          </p>
+
+          <div class="hero-meta">
+            <div class="meta-pill">📍 <span id="hero-location">Guanajuato, México</span></div>
+            <div class="meta-pill">📱 +52 473 737 4224</div>
+            <div class="meta-pill">✉️ <a href="mailto:pa.garciaperezvela@ugto.mx" style="color: inherit;">pa.garciaperezvela@ugto.mx</a></div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="mailto:pa.garciaperezvela@ugto.mx" class="btn-primary" data-i18n="btnContact">
+              ✉️ Contactar por Email
+            </a>
+            <a href="#projects" class="btn-secondary" data-i18n="btnViewProjects">
+              🚀 Explorar Proyectos
+            </a>
+            <a href="https://linkedin.com/in/patricioagpv" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              💼 LinkedIn
+            </a>
+            <a href="https://github.com/p5Patricio" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              💻 GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="sectionSkillsTitle">Habilidades Técnicas</h2>
+          <p class="section-subtitle" data-i18n="sectionSkillsSubtitle">Stack de desarrollo, bases de datos, herramientas cloud y metodologías</p>
+        </div>
+        <div id="skills-container" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="sectionExpTitle">Experiencia Profesional</h2>
+          <p class="section-subtitle" data-i18n="sectionExpSubtitle">Trayectoria destacada en ingeniería de software e impacto institucional</p>
+        </div>
+        <div id="experience-container" class="experience-timeline"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="sectionProjectsTitle">Proyectos Seleccionados</h2>
+          <p class="section-subtitle" data-i18n="sectionProjectsSubtitle">Filtra por tecnologías para explorar soluciones en producción y open source</p>
+        </div>
+
+        <div id="project-filters-container" class="filter-container"></div>
+        <div id="projects-counter" class="projects-counter"></div>
+        <div id="projects-container" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- PDF DOWNLOADS SECTION -->
+    <section id="pdfs">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="sectionPdfsTitle">Descarga de CVs Oficiales en PDF</h2>
+          <p class="section-subtitle" data-i18n="sectionPdfsSubtitle">Documentos oficiales optimizados para ATS y reclutadores en formato de 1 página</p>
+        </div>
+        <div id="pdfs-container" class="pdf-grid"></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="sectionEduTitle">Educación Superior</h2>
+          <p class="section-subtitle" data-i18n="sectionEduSubtitle">Formación universitaria en Ingeniería en Sistemas Computacionales</p>
+        </div>
+        <div id="education-container"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/patricioagpv" target="_blank" rel="noopener noreferrer" class="footer-link" title="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/p5Patricio" target="_blank" rel="noopener noreferrer" class="footer-link" title="GitHub">GitHub</a>
+        <a href="https://patodev.com/" target="_blank" rel="noopener noreferrer" class="footer-link" title="Portafolio">Patodev.com</a>
+        <a href="mailto:pa.garciaperezvela@ugto.mx" class="footer-link" title="Email">Email</a>
+      </div>
+      <p data-i18n="footerText">Diseñado para GitHub Pages con HTML5, Vanilla CSS & JavaScript. © 2026 Patricio García.</p>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

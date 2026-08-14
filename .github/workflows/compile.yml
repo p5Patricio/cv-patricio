@@ -1,4 +1,4 @@
-name: Build LaTeX CV
+name: Build & Deploy CV Engine
 
 on:
   push:
@@ -8,43 +8,78 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  build_latex:
+  build_verify_deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Compile Spanish CV
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pypdf google-genai
+
+      - name: Compile Spanish CVs
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: cv_es.tex
+          root_file: |
+            cv_es.tex
+            cv_es_alten_python.tex
           working_directory: es/
 
-      - name: Compile English CV
+      - name: Compile English CVs
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: cv_en.tex
+          root_file: |
+            cv_en.tex
+            cv_en_alten_python.tex
           working_directory: en/
+
+      - name: Verify Single-Page Rule for All PDFs
+        run: |
+          python scripts/verify_single_page.py
 
       - name: Upload PDF Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: CV_PDFs
           path: |
-            es/cv_es.pdf
-            en/cv_en.pdf
+            es/*.pdf
+            en/*.pdf
 
-      - name: Release PDFs (Optional)
+      - name: Release PDFs (GitHub Releases)
         if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            es/cv_es.pdf
-            en/cv_en.pdf
+            es/*.pdf
+            en/*.pdf
           tag_name: latest
           name: Latest CV PDFs
-          body: "Automated build of the latest CV in Spanish and English."
+          body: "Automated build of all CV variants in Spanish and English with 1-page verification."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Pages
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages Artifact
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+        id: deployment
+        uses: actions/deploy-pages@v4
